@@ -1,0 +1,320 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: auto;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+
+<!-- other styles 
+. icon{
+	opacity:1;
+	
+}
+
+.icon:hover{
+	opacity:0.7;
+
+}
+
+
+
+
+.button1 {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;width:50px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+
+.button1:hover {
+    background-color: #4CAF50;
+    color: white;
+}-->
+
+
+
+.circular {
+	width: 300px;
+	height: 300px;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	
+	}
+
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 5px;
+    width: 100%;
+    border-style: solid;	
+    border-width: 2px;
+    border-opacity: 0.5;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #ddd;
+}
+
+button.accordion:after {
+    content: '\02795';
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2796";
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.6s ease-in-out;
+    opacity: 0;
+}
+
+div.panel.show {
+    opacity: 1;
+    max-height: 10000px;
+	
+}
+
+
+
+<!-- Slides how -->
+
+#slideshow { 
+    position: relative; 
+    width: 100%; 
+ }
+#slideshow > div { 
+    position: absolute; 
+   }
+
+<!-- Nav bar resize -->
+*, 
+*:before, 
+*:after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+
+
+.containere {
+  width: 90%;
+  min-width: 740px;
+  margin: 0 auto;
+}
+
+ul {
+	float: right;
+}
+
+li {
+	display: inline;
+	float: left;
+}
+
+img.logo {
+	float: left;
+}
+
+
+
+/* Header */
+
+header {
+	background-color: #212121;
+
+	float: left;
+	width: 100%;
+	position: fixed;
+	z-index: 10;
+
+}
+
+header a {
+	display: block;
+	padding: 10px 16px;
+	color: white;
+	text-decoration: none;
+	font-family: 'Amaranth', sans-serif;
+	text-transform: uppercase;
+	font-size: 1em;
+}
+
+header a.active  {
+	 background-color: #116db5;
+}
+
+header a:hover {
+	background-color: #0c4471;
+	opacity: 0.6;
+}
+
+
+header li {
+	margin-right: 0px;
+}
+
+/* header large */
+header.large {
+	height: 135px;
+	opacity: 0.8;
+}
+header.large img {
+	width: 280px;
+	height: 150px;
+  margin-top: 0px;
+}
+header.large li {
+	margin-top: 10px;
+}
+
+/* header small */
+
+header.small {
+	height: 100px;
+	opacity: 0.9;
+}
+header.small img {
+	width: 220px; 
+	height: 100px;
+	margin-top: 0px;
+}
+header.small li {
+	margin-top: 0px;
+
+}
+
+/* Transitions */
+
+header,
+nava,
+a,
+img,
+li {
+	transition: .7s all;
+	-moz-transition: .7s all;
+	-webkit-transition: .7s all;
+	-o-transition: .7s all;
+}
+
+
+
+
+/* flip container*/
+.flip-container {
+	perspective: 500px;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width: 200px;
+	height: 300px;
+	 
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+}

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>SAE | IITJ Racers</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+
+
+<!-- js -->
+  <script src="http://leemark.github.io/better-simple-slideshow/demo/js/hammer.min.js"></script><!-- for swipe support on touch interfaces -->
+</head>
+
+
+
+
+
+
+
+
+<body>
+
+<!-- header starts -->
+
+
+
+<header class="large">
+
+
+      <a href="aboutus.html"><img class="logo" src="racers1.png"></a>
+      <ul>
+
+        <li><a  href="index.html">Home</a></li>
+        <li><a href="SAE.html">SAE</a></li>
+        <li><a class="active" href="Cars.html">Cars</a></li>
+        <li><a href="Team.html">Team</a></li>
+        <li><a href="Sponsors.html">Sponsors</a></li>
+        <li><a href="Contacts.html">Contact Us</a></li>
+      </ul>
+
+
+</header>
+
+<!-- scrollfire starts starts -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- slidshow starts starts -->
+
+<div id="index-banner" class="parallax-container" style="height:350px">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header left white-text"><font size="8" color="white" face="Copperplate Gothic"><b></b></font></h1>
+        <div class="row left">
+          <h5 class="header col s12 light"><font size="5" color="white" face="Copperplate Gothic"><b></b></font></h5>
+        </div>
+
+      </div>
+    </div>
+    <div class="parallax" ><img src="10.jpg" alt="Unsplashed background img 1"  width="100%"></div>
+  </div>
+
+
+<div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 left">
+          <h5><font face="Arial"><b>Baja SAE</b></font></h5>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col s4">
+          <div class="card">
+            <div class="card-image">
+              <img src="6.jpg">
+            </div>
+
+            <div class="card-action">
+              <a href="#"><font face="arial" size="4" color="#1565c0">VAAYU 1.0</font></a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col s4">
+          <div class="card">
+            <div class="card-image">
+              <img src="VAAYU 2.0.jpg">
+            </div>
+
+            <div class="card-action">
+              <a href="vaayu 2.0.html"><font face="arial" size="4" color="#1565c0">VAAYU 2.0</font></a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col s4">
+          <div class="card">
+            <div class="card-image">
+              <img src="6.jpg">
+            </div>
+
+            <div class="card-action">
+              <a href="vajra.html"><font face="arial" size="4" color="#1565c0">VAJRA</font></a>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+
+       <div class="row">
+        <div class="col s12 left">
+          <h5><font face="Arial"><b>Efficycle SAE</b></font></h5>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col s4">
+          <div class="card">
+            <div class="card-image">
+              <img src="SAE_1.jpg">
+            </div>
+
+            <div class="card-action">
+              <a href="#"><font face="arial" size="4" color="#1565c0">Effycycle</font></a>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+<!-- footers starts starts -->
+ <footer class="page-footer grey lighten-4">
+
+
+
+
+
+    <div class="footer-copyright  grey darken-4">
+      <div class="container">
+     <center> Copyright 2017 <a class="brown-text text-lighten-3" href="http://iitj.ac.in/">Indian Institute of Technology Jodhpur</a></center>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+<script>
+$("#slideshow > div:gt(0)").hide();
+
+setInterval(function() {
+  $('#slideshow > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo('#slideshow');
+},  3000);
+
+</script>
+
+
+
+<script>
+$(document).on("scroll", function() {
+
+  if($(document).scrollTop()>400) {
+    $("header").removeClass("large").addClass("small");
+  } else {
+    $("header").removeClass("small").addClass("large");
+  }
+
+});
+
+</script>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+        this.classList.toggle("active");
+        this.nextElementSibling.classList.toggle("show");
+  }
+}
+</script>
+
+
+
+  </body>
+</html>

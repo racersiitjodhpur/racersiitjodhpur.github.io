@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Sponsors | IITJ Racers</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+
+
+<!-- js -->
+  <script src="http://leemark.github.io/better-simple-slideshow/demo/js/hammer.min.js"></script><!-- for swipe support on touch interfaces -->
+</head>
+
+
+
+
+
+
+
+
+<body>
+
+<!-- header starts -->
+
+
+
+<header class="large">
+
+
+      <a href="aboutus.html"><img class="logo" src="racers1.png"></a>
+      <ul>
+
+        <li><a  href="index.html">Home</a></li>
+        <li><a href="SAE.html">SAE</a></li>
+        <li><a href="Cars.html">Cars</a></li>
+        <li><a href="Team.html">Team</a></li>
+        <li><a class="active" href="Sponsors.html">Sponsors</a></li>
+        <li><a href="Contacts.html">Contact Us</a></li>
+      </ul>
+
+
+</header>
+
+
+<!-- scrollfire starts starts -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- slidshow starts starts -->
+
+<div id="index-banner" class="parallax-container" style="height:300px">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header left white-text"><font size="8" color="white" face="Copperplate Gothic"><b></b></font></h1>
+        <div class="row left">
+          <h5 class="header col s12 light"><font size="5" color="white" face="Copperplate Gothic"><b></b></font></h5>
+        </div>
+
+      </div>
+    </div>
+    <div class="parallax" ><img src="sponsors.jpg" alt="Unsplashed background img 1"  width="100%"></div>
+  </div>
+
+
+<div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 left">
+
+
+          <h5><font face="Arial"><br><b>Message To Sponsors</b></font></h5>
+          <font face="arial" size="4" color="#1565c0">TOGETHER WE CAN</font>
+
+
+          <p class="left-align light"><font face="Arial" size="3">Racers IITJ succeded in achieving 12th rank in Engineering Design and an overall of 63rd rank on the national platform of SAE BAJA through a striving journey since two years. We are determined to improve our performance in coming years as well. The team of Racers IITJ 17-18 has commenced the preparations for the next edition of SAE BAJA. We have completed ideation and are currently in design phase. Preparing to perform better in virtual round  of SAE BAJA 18 through which we can make our dream to build the best vehicle come true in the final event of BAJA 2018.<br><br>
+
+For the path that lies ahead we need your support in achieving this year's goal which is to be the number one team!<br><br>
+
+As a sponsor there are many ways in which you can extend your support.<br>
+<b>1. Monetary support: </b> : You can support us financially to procure components and equipment for the development of our vehicle<br>
+<b>2. In-Kind Sponsorship:</b> : If you are a supplier of automotive components and can supply parts which can be used in our vehicle.<br>
+<b>3. Technical Know-How:</b> If you are an expert on certain subject then you can help us by sharing your knowledge and expertise.<br>
+<b>4. Tools & Equipment: </b>You can provide tools or machines which we need for the fabrication of our car.<br><br>
+
+
+By collaborating with us you get an opportunity to get publicized at on-ground and digital events at national level platforms.<br>
+
+<b>Kindly have a look at our marketing brochure and events timeline to get details of how you can contribute and be an integral part of our team.</b></font><br><br></p>
+
+<div style="border:2px ">
+<object data="sponsors.pdf" type="application/pdf" width="100%" height="500px">
+  <p>Alternative text - include a link <a href="myfile.pdf">to the PDF!</a></p>
+</object>
+</div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+<!-- footers starts starts -->
+ <footer class="page-footer grey lighten-4">
+
+
+
+
+    <div class="footer-copyright  grey darken-4">
+      <div class="container">
+     <center> Copyright 2017 <a class="brown-text text-lighten-3" href="http://iitj.ac.in/">Indian Institute of Technology Jodhpur</a></center>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+<script>
+$("#slideshow > div:gt(0)").hide();
+
+setInterval(function() {
+  $('#slideshow > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo('#slideshow');
+},  3000);
+
+</script>
+
+
+
+<script>
+$(document).on("scroll", function() {
+
+  if($(document).scrollTop()>400) {
+    $("header").removeClass("large").addClass("small");
+  } else {
+    $("header").removeClass("small").addClass("large");
+  }
+
+});
+
+</script>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+        this.classList.toggle("active");
+        this.nextElementSibling.classList.toggle("show");
+  }
+}
+</script>
+
+
+
+
+
+  </body>
+</html>
